@@ -49,7 +49,56 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .research-section {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .paper-info {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .btn-download, .btn-view {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .btn-download {
+            background-color: #28a745;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .btn-download:hover {
+            background-color: #218838;
+        }
+        .btn-view {
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .btn-view:hover {
+            background-color: #0069d9;
+        }
+    </style>
 	</head>
 	<body>
 		
@@ -116,6 +165,38 @@
 			</div>
 		</div>
 	</div>
+	<div class="research-section">
+    <div class="section-title" style="color: #007bff;">Research Paper</div>
+    <div class="paper-info">
+        <p><strong style="color: #007bff;">Title:</strong>Comparative Study of Java and Python Languages with Reference to Data Science</p>
+        <p><strong style="color: #007bff;">Published in:</strong> International Journal of Scientific Research in Engineering and Management (IJSREM)</p>
+        <p><strong style="color: #007bff;">Abstract:</strong> This research provides a comprehensive comparison & analysis between Java and Python, focusing on their application in data science.</p>
+    </div>
+    <!-- Button to download the paper PDF -->
+    <div class="text-center">
+        <button class="btn btn-download" onclick="downloadPDF()">Download Paper PDF</button>
+    </div>
+    <!-- Button to view paper on the journal's website -->
+    <div class="text-center mt-3">
+        <a href="https://ijsrem.com/download/comparative-study-of-java-and-python-languages-with-reference-to-data-science/" class="btn btn-view" target="_blank">View Paper on Journal</a>
+    </div>
+</div>
+
+<!-- JavaScript to handle PDF download -->
+<script>
+    function downloadPDF() {
+        const pdfUrl = 'Research Paper 1 python vs java.pdf';  // replace with actual path to the PDF
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'Research Paper 1 python vs java.pdf';
+        link.click();
+    }
+</script>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 	<div id="fh5co-resume" class="fh5co-bg-color">
 		<div class="container">
@@ -404,10 +485,10 @@
 				</div>
 	
 				<div class="col-md-4 text-center col-padding animate-box">
-					<a  class="work" style="background-image: url(images/14.jpg);">
+					<a  class="work" style="background-image: url(images/14.png);">
 						<div class="desc">
-							<h3>Guidance</h3>
-							<h4>Lecture on carrear guidance<h4>
+							<h3>Research Paper Published!</h3>
+							<h4>Certificate of IJSREM Journal for publication of research paper.<h4>
 						</div>
 					</a>
 				</div>
@@ -429,6 +510,7 @@
 						</div>
 					</a>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -457,6 +539,26 @@
 				<div class="col-md-3">
 					<div class="fh5co-blog animate-box">
 						<a class="blog-bg" style="background-image: url(images/44.jpg);"></a>
+						 
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a  class="blog-bg" style="background-image: url(images/x.jpg);"></a>
+						 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a class="blog-bg" style="background-image: url(images/y.jpg);"></a>
+						 
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="fh5co-blog animate-box">
+						<a class="blog-bg" style="background-image: url(images/z.jpg);"></a>
 						 
 					</div>
 				</div>
