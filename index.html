@@ -166,7 +166,7 @@
 		</div>
 	</div>
 	<div class="research-section">
-    <div class="section-title" style="color: #007bff;">Research Paper</div>
+    <div class="section-title" style="color: #007bff;">Research Paper 1</div>
     <div class="paper-info">
         <p><strong style="color: #007bff;">Title:</strong>Comparative Study of Java and Python Languages with Reference to Data Science</p>
         <p><strong style="color: #007bff;">Published in:</strong> International Journal of Scientific Research in Engineering and Management (IJSREM)</p>
@@ -193,6 +193,37 @@
     }
 </script>
 
+
+<div class="research-section">
+    <div class="section-title" style="color: #007bff;">Research Paper 2</div>
+    <div class="paper-info">
+        <p><strong style="color: #007bff;">Title:</strong>EVALUATING THE IMPACT OF COMPILER OPTIMIZATIONS ON PROGRAM 
+PERFORMANCE: A COMPARATIVE ANALYSIS OF C, C++, AND JAVA</p>
+        <p><strong style="color: #007bff;">Published in:</strong> International Research Journal of Modernization in Engineering Technology and Science (IRJMETS)</p>
+        <p><strong style="color: #007bff;">Abstract:</strong> This study examines the impact of different compiler optimization levels on the performance of Java, C, and C++ 
+programs.</p>
+    </div>
+    <!-- Button to download the paper PDF -->
+    <div class="text-center">
+        <button class="btn btn-download" onclick="downloadPDF1()">Download Paper PDF</button>
+    </div>
+    <!-- Button to view paper on the journal's website -->
+    <div class="text-center mt-3">
+        <a href="https://www.irjmets.com/paperdetail.php?paperId=127ddf464612a84ca91ad94e364685ac&title=Evaluating+the+Impact+of+Compiler+Optimizations+on+Program+Performance%3A+A+Comparative+Analysis+of+C%2CC%2B%2B%2C+and+Java.&authpr=Asst.+Prof.+Pratik+H.+Adhav" class="btn btn-view" target="_blank">View Paper on Journal</a>
+    </div>
+</div>
+
+<!-- JavaScript to handle PDF download -->
+<script>
+    function downloadPDF1() {
+        const pdfUrl = 'IRJMETS61100099549.pdf';  // replace with actual path to the PDF
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'IRJMETS61100099549.pdf';
+        link.click();
+    }
+</script>
+		
 <!-- Bootstrap JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
