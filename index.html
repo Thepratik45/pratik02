@@ -8,6 +8,7 @@
 	<meta name="description" content="Pratik's Portfolio" />
 	<meta name="keywords" content="responsive" />
 	<meta name="author" content="freehtml5.co" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 
 	<!-- 
 	//////////////////////////////////////////////////////
@@ -98,10 +99,11 @@
         .btn-view:hover {
             background-color: #0069d9;
         }
+		
     </style>
 	</head>
 	<body>
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">	
@@ -130,97 +132,129 @@
 		</div>
 	</header>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Pratik Hanumant Adhav</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+91 7447 527 531</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">adhavpratik77@gmail.com</span></li>
-						
-						<li><span class="first-block">Address:</span><span class="second-block">A- Sortapwadi Phata,Haveli,Pune Maharashtra 412110</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hey Stalker!</h2>
-					<p>Welcome to my Portfolio!! My name is pratik and you are looking at webpage created by me.</p>
-					<p>I am a developer. <mark><code>If you want to check my work which includes Research Papers and Projects you can visit my github mentioned below!</code></mark> If you want more details about my education, You can see my resume. I have given button below which can dirctly jump on my resume! </p>
-					<button class="btn" onclick="document.location='pratik Resume.pdf'" target="_blank">RESUME</button>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://x.com/ThePratik45?t=JAzcVSXkKmVsG2_FHdRxag&s=09"><i class="icon-twitter2"></i></a></li>
-							<li><a href="https://www.facebook.com/pratik.adhav.184"><i class="icon-facebook3"></i></a></li>
-							<li><a href="https://instagram.com/thepratik45?igshid=YmMyMTA2M2Y="><i class="icon-instagram"></i></a></li>
-							<li><a href="https://github.com/Thepratik45/"><i class="icon-github"></i></a></li>
+	<section id="fh5co-about" class="about-section animate-box">
+    <div class="container">
 
-						</ul>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="research-section">
-    <div class="section-title" style="color: #007bff;">Research Paper 1</div>
-    <div class="paper-info">
-        <p><strong style="color: #007bff;">Title:</strong>Comparative Study of Java and Python Languages with Reference to Data Science</p>
-        <p><strong style="color: #007bff;">Published in:</strong> International Journal of Scientific Research in Engineering and Management (IJSREM)</p>
-        <p><strong style="color: #007bff;">Abstract:</strong> This research provides a comprehensive comparison & analysis between Java and Python, focusing on their application in data science.</p>
-    </div>
-    <!-- Button to download the paper PDF -->
-    <div class="text-center">
-        <button class="btn btn-download" onclick="downloadPDF()">Download Paper PDF</button>
-    </div>
-    <!-- Button to view paper on the journal's website -->
-    <div class="text-center mt-3">
-        <a href="https://ijsrem.com/download/comparative-study-of-java-and-python-languages-with-reference-to-data-science/" class="btn btn-view" target="_blank">View Paper on Journal</a>
-    </div>
-</div>
+        <!-- Title -->
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="about-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+        </div>
 
-<!-- JavaScript to handle PDF download -->
+        <div class="row about-wrapper">
+
+            <!-- LEFT CARD -->
+            <div class="col-md-4">
+                <div class="about-card">
+                    <h3>Personal Info</h3>
+                    <ul class="info">
+                        <li><span>👤 Name:</span> Pratik Hanumant Adhav</li>
+                        <li><span>📞 Phone:</span> +91 7447 527 531</li>
+                        <li><span>📧 Email:</span> adhavpratik77@gmail.com</li>
+                        <li><span>📍 Address:</span> Sortapwadi, Pune</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col-md-8">
+                <div class="about-content">
+                    <h2>Hey Stalker 😄</h2>
+                    <p>
+                        Welcome to my portfolio! I’m <strong>Pratik</strong>, a passionate developer who loves building real-world applications and solving problems.
+                    </p>
+
+                    <p class="highlight-text">
+                        If you want to explore my projects, research papers, and development work — check out my GitHub below 👇
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="about-buttons">
+                        <a href="pratik Resume.pdf" target="_blank" class="btn resume-btn">📄 View Resume</a>
+                        <a href="https://github.com/Thepratik45/" target="_blank" class="btn github-btn">💻 GitHub</a>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://x.com/ThePratik45" target="_blank"><i class="icon-twitter2"></i></a>
+                        <a href="https://www.facebook.com/pratik.adhav.184" target="_blank"><i class="icon-facebook3"></i></a>
+                        <a href="https://instagram.com/thepratik45" target="_blank"><i class="icon-instagram"></i></a>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+	<section class="research-wrapper">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="research-title">My Research Work</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="row">
+
+            <!-- Research Paper 1 -->
+            <div class="col-md-6">
+                <div class="research-card">
+                    <h3>📄 Research Paper 1</h3>
+                    <p><strong>Title:</strong> Comparative Study of Java and Python Languages with Reference to Data Science</p>
+                    <p><strong>Published in:</strong> IJSREM</p>
+                    <p class="abstract">
+                        This research provides a comprehensive comparison & analysis between Java and Python, focusing on their application in data science.
+                    </p>
+
+                    <div class="btn-group-custom">
+                        <button class="btn btn-download" onclick="downloadPDF()">⬇ Download</button>
+                        <a href="https://ijsrem.com/download/comparative-study-of-java-and-python-languages-with-reference-to-data-science/" target="_blank" class="btn btn-view">🌐 View</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Paper 2 -->
+            <div class="col-md-6">
+                <div class="research-card">
+                    <h3>📄 Research Paper 2</h3>
+                    <p><strong>Title:</strong> Evaluating the Impact of Compiler Optimizations on Program Performance</p>
+                    <p><strong>Published in:</strong> IRJMETS</p>
+                    <p class="abstract">
+                        This study examines the impact of compiler optimization levels on the performance of Java, C, and C++ programs.
+                    </p>
+
+                    <div class="btn-group-custom">
+                        <button class="btn btn-download" onclick="downloadPDF1()">⬇ Download</button>
+                        <a href="https://www.irjmets.com/paperdetail.php?paperId=127ddf464612a84ca91ad94e364685ac&title=Evaluating+the+Impact+of+Compiler+Optimizations+on+Program+Performance%3A+A+Comparative+Analysis+of+C%2CC%2B%2B%2C+and+Java.&authpr=Asst.+Prof.+Pratik+H.+Adhav" target="_blank" class="btn btn-view">🌐 View</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- JS (UNCHANGED) -->
 <script>
-    function downloadPDF() {
-        const pdfUrl = 'Research Paper 1 python vs java.pdf';  // replace with actual path to the PDF
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.download = 'Research Paper 1 python vs java.pdf';
-        link.click();
-    }
-</script>
+function downloadPDF() {
+    const pdfUrl = 'Research Paper 1 python vs java.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Research Paper 1 python vs java.pdf';
+    link.click();
+}
 
-
-<div class="research-section">
-    <div class="section-title" style="color: #007bff;">Research Paper 2</div>
-    <div class="paper-info">
-        <p><strong style="color: #007bff;">Title:</strong>Evaluating the impact of compiler optimizations on program Performance: a comparative analysis of c, c++, and java</p>
-        <p><strong style="color: #007bff;">Published in:</strong> International Research Journal of Modernization in Engineering Technology and Science (IRJMETS)</p>
-        <p><strong style="color: #007bff;">Abstract:</strong> This study examines the impact of different compiler optimization levels on the performance of Java, C, and C++ 
-programs.</p>
-    </div>
-    <!-- Button to download the paper PDF -->
-    <div class="text-center">
-        <button class="btn btn-download" onclick="downloadPDF1()">Download Paper PDF</button>
-    </div>
-    <!-- Button to view paper on the journal's website -->
-    <div class="text-center mt-3">
-        <a href="https://www.irjmets.com/paperdetail.php?paperId=127ddf464612a84ca91ad94e364685ac&title=Evaluating+the+Impact+of+Compiler+Optimizations+on+Program+Performance%3A+A+Comparative+Analysis+of+C%2CC%2B%2B%2C+and+Java.&authpr=Asst.+Prof.+Pratik+H.+Adhav" class="btn btn-view" target="_blank">View Paper on Journal</a>
-    </div>
-</div>
-
-<!-- JavaScript to handle PDF download -->
-<script>
-    function downloadPDF1() {
-        const pdfUrl = 'IRJMETS61100099549.pdf';  // replace with actual path to the PDF
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.download = 'IRJMETS61100099549.pdf';
-        link.click();
-    }
+function downloadPDF1() {
+    const pdfUrl = 'IRJMETS61100099549.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'IRJMETS61100099549.pdf';
+    link.click();
+}
 </script>
 		
 <!-- Bootstrap JS, Popper.js, and jQuery -->
@@ -240,6 +274,18 @@ programs.</p>
 					<ul class="timeline">
 					<li class="timeline-heading text-center animate-box">
 							<div><h3>Work Experience</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Head of the Department</h3>
+									<span class="company">Padmashree Manibhai Desai college, Uruli Kanchan, July 2025 - Present</span>
+								</div>
+								<div class="timeline-body">
+									<p>Working as an Head of the Computer Science & Applications Department in Padmashree Manibhai Desai college, Uruli Kanchan.</p>
+								</div>
+							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
@@ -481,144 +527,104 @@ programs.</p>
 			</div>
 		
 
-		<div id="fh5co-work" class="fh5co-bg-dark">
+		
+<!-- ====== ORANGE THEME PHOTO GALLERY (UNIFORM SIZE) ====== -->
+<section id="photo-gallery" class="gallery-section">
     <div class="container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>Precious Moments!</h2>
+        
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="gallery-title">Our Photo Gallery</h2>
+                <div class="title-underline"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 text-center col-padding animate-box">
-                <a class="work" style="background-image: url(images/11.jpg);">
-                    <div class="desc">
-                        <h3>Blood Donation!</h3>
-                        <p>Donated Blood on Occasion of Balidan Maas</p>
+
+        <div class="row gallery-grid">
+
+            <!-- Repeat same structure for all images -->
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/22.jpeg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/22.jpeg">
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 text-center col-padding animate-box">
-                <a class="work" style="background-image: url(images/12.jpg);">
-                    <div class="desc">
-                        <h3>Blood Donation Souvenir</h3>
-                        <p>Got the Souvenir for Blood Donation</p>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/33.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/33.jpg">
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 text-center col-padding animate-box">
-                <a class="work" style="background-image: url(images/13.jpg);">
-                    <div class="desc">
-                        <h3>Master The Blaster!</h3>
-                        <p>Master of computer science degree</p>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/44.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/44.jpg">
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 text-center col-padding animate-box">
-                <a class="work" style="background-image: url(images/14.png);">
-                    <div class="desc">
-                        <h3>Research Paper Published!</h3>
-                        <p>Certificate of IJSREM Journal for publication of research paper.</p>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/x.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/x.jpg">
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 text-center col-padding animate-box">
-                <a class="work" style="background-image: url(images/16.jpg);">
-                    <div class="desc">
-                        <h3>First Prize!</h3>
-                        <p>First prize for speech on college level</p>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/y.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/y.jpg">
                     </div>
                 </a>
             </div>
-            <div class="col-md-4 text-center col-padding animate-box">
-                <a class="work" style="background-image: url(images/Picture5.jpg);">
-                    <div class="desc">
-                        <h3>Paper Presentation in International Research Paper Conference!</h3>
-                        <p>Presented my paper in International Research Paper Conference where scholars from 13 different countries presented their paper.</p>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/z.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/z.jpg">
                     </div>
                 </a>
             </div>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/Picture2.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/Picture2.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/Picture3.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/Picture3.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/Picture4.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/Picture4.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-sm-6 gallery-item">
+                <a href="images/Picture6.jpg" data-lightbox="gallery">
+                    <div class="gallery-box">
+                        <img src="images/Picture6.jpg">
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
-		</div>
-			
-			
-
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Gallery</h2>
-					
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a  class="blog-bg" style="background-image: url(images/22.jpeg);"></a>
-						 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/33.jpg);"></a>
-						 
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/44.jpg);"></a>
-						 
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a  class="blog-bg" style="background-image: url(images/x.jpg);"></a>
-						 
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/y.jpg);"></a>
-						 
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/z.jpg);"></a>
-						 
-					</div>
-				</div>
-		
-				<div class="col-md-2">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/Picture2.jpg);"></a>
-						 
-					</div>
-				</div>
-				<div class="col-md-4 ">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/Picture3.jpg);"></a>
-						 
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/Picture4.jpg);"></a>
-						 
-					</div>
-				</div>
-				
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a class="blog-bg" style="background-image: url(images/Picture6.jpg);"></a>
-						 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+</section>
 	
 	<div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
