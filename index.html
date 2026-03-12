@@ -201,7 +201,7 @@
         <div class="row">
 
             <!-- Research Paper 1 -->
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="research-card">
                     <h3>📄 Research Paper 1</h3>
                     <p><strong>Title:</strong> Comparative Study of Java and Python Languages with Reference to Data Science</p>
@@ -218,7 +218,7 @@
             </div>
 
             <!-- Research Paper 2 -->
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="research-card">
                     <h3>📄 Research Paper 2</h3>
                     <p><strong>Title:</strong> Evaluating the Impact of Compiler Optimizations on Program Performance</p>
@@ -233,6 +233,22 @@
                     </div>
                 </div>
             </div>
+			<!-- Research Paper 3 -->
+			<div class="col-md-4">
+                <div class="research-card">
+                    <h3>📄 Research Paper 3</h3>
+                    <p><strong>Title:</strong> Benchmarking Modern AI Chatbots: A Multidimensional Evaluation of ChatGPT, Gemini, and Copilot</p>
+                    <p><strong>Published in:</strong> IRJMETS</p>
+                    <p class="abstract">
+                        This research provides a comprehensive comparison & analysis between Different AI Chatbots, to find the most reliable chatbot.
+                    </p>
+
+                    <div class="btn-group-custom">
+                        <button class="btn btn-download" onclick="downloadPDF()">⬇ Download</button>
+                        <a href="https://www.irjmets.com/paperdetail.php?paperId=675f59397ec3b41ddf1a20ea360461ff" target="_blank" class="btn btn-view">🌐 View</a>
+                    </div>
+                </div>
+			</div>
 
         </div>
     </div>
@@ -253,6 +269,14 @@ function downloadPDF1() {
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'IRJMETS61100099549.pdf';
+    link.click();
+}
+
+function downloadPDF1() {
+    const pdfUrl = 'IRJMETS80300051190.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'IRJMETS80300051190.pdf';
     link.click();
 }
 </script>
